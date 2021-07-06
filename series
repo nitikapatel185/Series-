@@ -1,0 +1,93 @@
+//WAP counting
+package Array;
+
+import java.util.Scanner;
+
+public class Series1 {
+public static void main(String args[])
+{
+	int sum=0;
+	Scanner input = new Scanner(System.in);
+	System.out.println("Enter any number::");
+	int size = input.nextInt();
+	for(int j=0;j<=4;j++)
+	{
+	for(int i=0;i<=size;i++)
+	{
+	
+		System.out.println(i);
+	}
+	}
+}
+}
+
+//WAP to print odd series
+package Array;
+
+import java.util.Scanner;
+
+public class Series2 {
+public static void main(String args[])
+{
+	Scanner input = new Scanner (System.in);
+	System.out.println("Enter n terms::");
+	int n=input.nextInt();
+	for(int i=1;i<=n;i++)
+	{
+		if(i%2!=0)
+		{
+		System.out.println(i);
+		}
+	}
+}
+}
+
+//WAP to print even series
+package Array;
+
+import java.util.Scanner;
+
+public class Series3 {
+	public static void main(String args[])
+	{
+		Scanner input = new Scanner (System.in);
+		System.out.println("Enter n terms::");
+		int n=input.nextInt();
+		for(int i=1;i<=n;i++)
+		{
+			if(i%2==0)
+			{
+			System.out.println(i);
+			}
+		}
+	}
+}
+
+package Array;
+
+import java.util.Scanner;
+
+public class Series4 {
+	public static void main(String args[])
+	{
+		int n1,n2,i,j;
+		Scanner input = new Scanner (System.in);
+		System.out.println("Enter two  terms::");
+		 n1=input.nextInt();
+		 n2=input.nextInt();
+		for(i = n1; i<= n2; i++)
+		{
+		    for ( j = 2; j <=i; j++)
+		    {
+		    	if(i % j == 0)
+		    	{
+		    		break;
+		    	}
+		    }
+		    if(i==j)
+		    {
+		    	System.out.print(j + " ");
+		    }  
+		}
+	}
+}
